@@ -1,0 +1,839 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #999;
+    text-shadow: none;
+}
+
+::selection {
+    background: #999;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   /***** BASE STYLES *****/
+   html {
+       font-size: 16px;
+   }
+
+   body {
+     background-color: #eae9e7;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1em;
+     color: #333333;
+     margin: 0;
+     padding: 0;
+   }
+
+   /***** GRID *****/
+   .full-width {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+
+   .half-width {
+     width: 100%;
+   }
+
+   .third-width {
+     width: 100%;
+   }
+
+   /***** HEADER *****/
+   header {
+     height: 500px;
+     background: url('../img/hero-mobile.jpg') no-repeat center top;
+     font-size: 1em;
+     font-family: 'Playfair Display', serif;
+     color: #333333;
+     text-align: center;
+   }
+
+   header .border {
+     width: 100%;
+     padding-top: 5px;
+     border-top: 1px solid #666666;
+   }
+
+   header .border::before {
+     width: 100%;
+     content: "";
+     display: block;
+     padding-bottom: 5px;
+     border-top: 1px solid #83ae9b;
+   }
+
+   header .border::after {
+     width: 100%;
+     content: "";
+     display: block;
+     border-top: 1px solid #f69679;
+   }
+
+   nav {
+     width: 100%;
+     margin: auto;
+     padding-top: 2em;
+     padding-left: .75em;
+   }
+
+   nav ul {
+     margin: auto;
+     padding: 0;
+   }
+
+   nav ul li {
+     display: inline-block;
+     padding-right: 1.5em;
+   }
+
+   nav ul li a {
+     text-transform: uppercase;
+     text-decoration: none;
+     font-size: 1em;
+     color: #333333;
+     font-weight: 300;
+   }
+
+   nav ul li a:hover {
+     border-bottom: 2px solid #f69679;
+   }
+
+   header .header-container {
+     clear: both;
+     margin: auto;
+     padding-top: 5em;
+   }
+
+   header h1 {
+     clear: both;
+     font-size: 1.75em;
+     font-weight: 300;
+     margin: auto;
+   }
+
+   header h1:after {
+       content: "";
+       display: block;
+       margin: 0 auto;
+       width: 35%;
+       padding-top: 1em;
+       border-bottom: 1px solid #333333;
+   }
+
+   header h2 {
+     font-size: 1.75em;
+     font-weight: 300;
+     margin: auto;
+     padding-top: .75em;
+   }
+
+   /***** ABOUT *****/
+   #about {
+     background: #f9f5f2;
+     height: auto;
+     font-size: 1em;
+     color: #333333;
+   }
+
+   #about .about-container {
+     width: 93%;
+     max-width: 1200px;
+     font-size: 1em;
+     margin: 0 auto;
+     padding: 8em 0 4em 0;
+     clear: both;
+   }
+
+   #about .about-half {
+     width: 100%;
+   }
+
+   #about h3 {
+     font-family: 'Playfair Display', serif;
+     font-size: 3em;
+     line-height: normal;
+   }
+
+   #about h4 {
+     font-family: 'Kristi', cursive;
+     font-size: 3.8em;
+     line-height: normal;
+     font-weight: 300;
+     font-style: italic;
+     color: #333333;
+   }
+
+   #about .about-p {
+     font-size: 1em;
+     margin-top: -3em;
+   }
+
+   #about p {
+     font-size: 1.1em;
+     line-height: 1.8em;
+     font-weight: 300;
+     width: 100%;
+   }
+
+   #about img {
+     max-width: 100%;
+   }
+
+   /***** SKILLS *****/
+   #skills {
+     background: #eae9e7;
+     height: auto;
+     text-align: center;
+     font-size: 1em;
+   }
+
+   #skills .full-width {
+     padding: 4em 0;
+   }
+
+   #skills img {
+     max-width: 100%;
+     padding-bottom: 1em;
+   }
+
+   #skills h3 {
+     font-family: 'Playfair Display', serif;
+     font-size: 3em;
+     color: #333333;
+   }
+
+   #skills h3:after {
+       content: "";
+       display: block;
+       margin: 0 auto;
+       width: 35%;
+       padding-top: .2em;
+       border-bottom: 1px solid #333333;
+   }
+
+   #skills h4 {
+     font-family: 'Playfair Display', serif;
+     font-weight: 400;
+     font-size: 1.5em;
+     color: #333333;
+   }
+
+   #skills p {
+     font-weight: 300;
+     font-size: 1.1em;
+     line-height: 1.8em;
+     color: #333333;
+     padding: 0 1.59em 2em 1.59em;
+   }
+
+   /***** PORTFOLIO *****/
+   #portfolio {
+     background: #f9f5f2;
+     height: auto;
+     text-align: center;
+     font-size: 1em;
+   }
+
+   #portfolio .full-width {
+     padding: 4em 0;
+   }
+
+   #portfolio .portfolio-container {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding-bottom: 4em;
+   }
+
+   #portfolio img {
+     max-width: 100%;
+     padding-bottom: 1em;
+   }
+
+   #portfolio h3 {
+     font-family: 'Playfair Display', serif;
+     font-size: 3em;
+     color: #333333;
+   }
+
+   #portfolio h3:after {
+       content: "";
+       display: block;
+       margin: 0 auto;
+       width: 35%;
+       padding-top: .2em;
+       border-bottom: 1px solid #333333;
+   }
+
+   #portfolio h4 a {
+     font-family: 'Playfair Display', serif;
+     font-weight: 400;
+     font-size: 1.5em;
+     color: #333333;
+     text-decoration: none;
+   }
+
+   #portfolio h4 a:hover {
+     border-bottom: 2px solid #f69679;
+   }
+
+   #portfolio p {
+     font-weight: 300;
+     font-size: 1.1em;
+     line-height: 1.8em;
+     color: #333333;
+     padding: 0 1.59em 2em 1.59em;
+   }
+
+   #portfolio p a {
+     color: #333333;
+   }
+
+   #portfolio .sc-link {
+     clear: both;
+     margin: 0 auto;
+     padding-bottom: 8em;
+   }
+
+   #portfolio .sc-link a {
+     text-decoration: none;
+     border-top: solid 1px #333;
+     border-bottom: solid 1px #333;
+     color: #333;
+     padding: 20px 0 20px 0;
+     text-align: center;
+     font-size: 1em;
+     font-weight: 400;
+     line-height: 1.4em;
+     text-transform: uppercase;
+   }
+
+   #portfolio .sc-link a:hover {
+     border-top: solid 2px #f69679;
+     border-bottom: solid 2px #f69679;
+   }
+
+   /***** CONTACT *****/
+   #contact {
+     background: #bed7d0;
+     height: auto;
+     text-align: center;
+     font-size: 1em;
+     margin: auto;
+   }
+
+   #contact .contact-container {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 3em 0;
+   }
+
+   #contact h3 {
+     font-family: 'Playfair Display', serif;
+     font-size: 2.25em;
+     color: #333333;
+   }
+
+   #contact h4 a {
+     font-family: 'Playfair Display', serif;
+     font-weight: 400;
+     font-size: 1.25em;
+     color: #333333;
+     text-decoration: none;
+   }
+
+   #contact h4 a:hover {
+     border-bottom: 2px solid #f69679;
+   }
+
+   #contact ul {
+     list-style: none;
+     padding-top: 1em;
+     margin-left: -1.875em;
+   }
+
+   #contact ul li {
+     display: inline-block;
+   }
+
+   #contact ul img {
+     padding-right: .625em;
+   }
+
+   form {
+     margin: 0 auto;
+     width: 80%;
+     font-size: 1em;
+     padding: 2em .5em;
+   }
+
+   form div + div {
+     margin-top: .5em;
+   }
+
+   input, textarea {
+     background-color: inherit;
+     font-size: 1em;
+     font-weight: 300;
+     width: 100%;
+     padding: 1em 0 .5em 0;
+     outline: none;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     border-bottom: 1px solid #333333;
+   }
+
+   textarea {
+     vertical-align: top;
+     height: 6em;
+     padding-top: 1em;
+   }
+
+   button {
+     width: 25%;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     background-color: inherit;
+     color: #333333;
+     font-weight: 400;
+     text-transform: uppercase;
+     letter-spacing: .1em;
+     outline: none;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     border-bottom: 1px solid #333333;
+     padding: 1em 0 .5em 0;
+   }
+
+   /***** FOOTER *****/
+   #footer {
+     background: #eae9e7;
+     text-align: center;
+     font-size: 1em;
+     height: auto;
+     padding: .5em 0;
+   }
+
+   #footer h5 {
+     font-family: 'Playfair Display', serif;
+     font-weight: 400;
+     font-size: .75em;
+   }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   /*---------- TABLET ----------*/
+   @media all and (min-width:768px) {
+     /***** GRID *****/
+     .full-width {
+       width: 100%;
+       max-width: 1200px;
+       margin: 0 auto;
+     }
+
+     .half-width {
+       width: 50%;
+     }
+
+     .third-width {
+       width: 100%;
+     }
+
+     /***** HEADER *****/
+     header {
+       height: 570px;
+       background: url('../img/hero-tablet.jpg') no-repeat center top;
+     }
+
+     header h1:after {
+       width: 25%;
+     }
+
+     nav {
+       padding-top: 3em;
+     }
+
+     nav ul li a {
+       font-size: 1.25em;
+     }
+
+     /***** ABOUT *****/
+     #about .about-container {
+       width: 90%;
+     }
+
+     #about p {
+       width: 90%;
+     }
+
+     #about img {
+       max-width: 100%;
+     }
+
+     /***** SKILLS *****/
+     #skills .skills-container {
+       width: 98%;
+       max-width: 1200px;
+       margin: 0 auto;
+       padding-bottom: 4em;
+     }
+     #skills .skill-list {
+       width: 33.33%;
+       float: left;
+     }
+
+     #skills h3:after {
+       width: 20%;
+     }
+
+     #skills p {
+       width: auto;
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+     /***** PORTFOLIO *****/
+     #portfolio h3:after {
+       width: 20%;
+     }
+
+     #portfolio p {
+       width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+     /***** CONTACT *****/
+     #contact .contact-container {
+       width: 95%;
+     }
+
+     #contact .half-width {
+       float: left;
+     }
+
+     form {
+       width: 90%;
+     }
+
+   }
+
+   /*---------- DESKTOP ----------*/
+   @media all and (min-width:940px) {
+     /***** GRID *****/
+     .third-width {
+       width: 33.33%;
+     }
+
+     /***** HEADER *****/
+     header {
+       height: 570px;
+       background: url('../img/hero-desktop.jpg') no-repeat center top;
+     }
+
+     header .header-container {
+       padding-top: 8em;
+     }
+
+     header h1 {
+       font-size: 2em;
+     }
+
+     header h1:after {
+         width: 15%;
+     }
+
+     header h2 {
+         font-size: 2em;
+     }
+
+     /***** ABOUT *****/
+     #about .about-container {
+       width: 80%;
+       padding-bottom: 10em;
+     }
+
+     #about .about-half {
+       width: 50%;
+       float: left;
+     }
+
+     /***** SKILLS *****/
+     #skills .skills-container {
+       width: 100%;
+       max-width: 1200px;
+     }
+
+     #skills h3:after {
+       width: 15%;
+     }
+
+     /***** PORTFOLIO *****/
+     #portfolio .third-width {
+       float: left;
+     }
+
+     #portfolio h3:after {
+       width: 15%;
+     }
+
+     #portfolio p {
+       width: auto;
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+     /***** CONTACT *****/
+     #contact .contact-container {
+       width: 75%;
+     }
+
+     form {
+       width: 75%;
+     }
+
+     input, textarea {
+       width: 85%;
+     }
+
+     button {
+       width: 25%;
+     }
+
+   }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

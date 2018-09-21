@@ -1,0 +1,138 @@
+/***** BASE STYLES *****/
+html {
+    font-size: 16px;
+}
+
+body {
+  background-color: #f9f5f2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
+
+/***** GRID *****/
+.full-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.third-width {
+  width: 100%;
+}
+
+/***** CONTENT STYLES *****/
+header .border {
+  width: 100%;
+  padding-top: 5px;
+  border-top: 1px solid #666666;
+}
+
+header .border::before {
+  width: 100%;
+  content: "";
+  display: block;
+  padding-bottom: 5px;
+  border-top: 1px solid #83ae9b;
+}
+
+header .border::after {
+  width: 100%;
+  content: "";
+  display: block;
+  border-top: 1px solid #f69679;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+header h1:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding: 2%;
+    border-bottom: 6px solid #333;
+}
+
+#portfolio .full-width {
+  clear: both;
+}
+
+#portfolio img {
+  max-width: 100%;
+  padding-bottom: 1em;
+}
+
+#portfolio h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #333;
+  padding: 2% 2% 5% 2%;
+}
+
+#portfolio h3 a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: solid 2px #f69679;
+}
+
+#portfolio h4 a {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #333333;
+  text-decoration: none;
+}
+
+#portfolio h4 a:hover {
+  border-bottom: 2px solid #f69679;
+}
+
+#portfolio p {
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #333333;
+  padding: 0 1.59em 2em 1.59em;
+}
+
+.return {
+  clear: both;
+  padding-bottom: 5%;
+}
+
+.return a {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #333;
+}
+
+.return a:hover {
+  border-bottom: 2px solid #f69679;
+}
+
+/*---------- TABLET ----------*/
+@media all and (min-width:768px) {
+  #portfolio p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*---------- DESKTOP ----------*/
+@media all and (min-width:940px) {
+  /***** GRID *****/
+  .third-width {
+    width: 33.33%;
+    float: left;
+    padding-bottom: 3%;
+  }
+  #portfolio p {
+    width: 80%;
+    margin: 0 auto;
+}

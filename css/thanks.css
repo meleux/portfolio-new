@@ -1,0 +1,51 @@
+/***** BASE STYLES *****/
+html {
+    font-size: 16px;
+}
+
+body {
+  background-color: #f9f5f2;
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  color: #333333;
+  text-align: center;
+}
+
+/***** CONTENT STYLES *****/
+header .border {
+  width: 100%;
+  padding-top: 5px;
+  border-top: 1px solid #666666;
+}
+
+header .border::before {
+  width: 100%;
+  content: "";
+  display: block;
+  padding-bottom: 5px;
+  border-top: 1px solid #83ae9b;
+}
+
+header .border::after {
+  width: 100%;
+  content: "";
+  display: block;
+  border-top: 1px solid #f69679;
+}
+
+header h1 {
+  font-size: 4.5em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.text h2 {
+  font-size: 2em;
+  font-weight: 200;
+  padding-bottom: 2em;
+}
+
+.return a {
+  text-decoration: none;
+  color: #333333;
+}
