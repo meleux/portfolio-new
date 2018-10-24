@@ -1,51 +1,37 @@
 /***** BASE STYLES *****/
 html {
-    font-size: 16px;
+  font-size: 16px;
+  background-color: #eed5d0;
 }
 
 body {
-  background-color: #f9f5f2;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1em;
-  color: #333333;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/***** THANK YOU PAGE *****/
+.thanks-container {
+  margin: auto;
   text-align: center;
 }
 
-/***** CONTENT STYLES *****/
-header .border {
-  width: 100%;
-  padding-top: 5px;
-  border-top: 1px solid #666666;
+.thanks-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 5em;
+  font-style: italic;
 }
 
-header .border::before {
-  width: 100%;
-  content: "";
-  display: block;
-  padding-bottom: 5px;
-  border-top: 1px solid #83ae9b;
-}
-
-header .border::after {
-  width: 100%;
-  content: "";
-  display: block;
-  border-top: 1px solid #f69679;
-}
-
-header h1 {
-  font-size: 4.5em;
-  font-weight: 200;
-  text-transform: uppercase;
-}
-
-.text h2 {
+.thanks-container h2 {
   font-size: 2em;
-  font-weight: 200;
+  font-weight: 300;
   padding-bottom: 2em;
 }
 
-.return a {
+.thanks-container a {
   text-decoration: none;
-  color: #333333;
+  color: #333;
 }

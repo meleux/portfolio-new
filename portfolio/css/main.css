@@ -101,6 +101,18 @@ textarea {
      padding: 0;
    }
 
+   /***** GRID *****/
+   .full-width {
+     width: 96%;
+     margin: 0 auto;
+     clear: both;
+   }
+
+   .half-width {
+     width: 100%;
+     padding-bottom: 3%;
+   }
+
    /***** HEADER *****/
    header {
      background-color: #fff;
@@ -190,386 +202,245 @@ textarea {
      font-weight: bold;
    }
 
-   /***** TITLE CARD *****/
-   #title-card {
-     clear: both;
-     height: 400px;
-     background: url('../img/hero-bg.jpg') no-repeat bottom right;
-     font-size: 1em;
-     color: #333;
-     text-align: center;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
-
-   #title-card .tc-content {
-     background-color: #fff;
-     width: 80%;
+   /***** SKILLS *****/
+   #skills {
+     background: #fff;
      height: auto;
-     align-items: center;
-     justify-content: center;
-     padding: 4% 2% 4% 2%;
+     text-align: center;
+     font-size: 1em;
    }
 
-   #title-card .tc-content h1 {
+   #skills .skills-container {
+     width: 98%;
+     margin: 0 auto;
+     padding: 4em 0 6em 0;
+   }
+
+   #skills .skills-title {
+     width: 95%;
+     max-width: 780px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     padding-bottom: 2em;
+   }
+
+   #skills h1 {
      font-family: 'Playfair Display', serif;
-     font-size: 2em;
      font-weight: 400;
-     font-style: italic;
-     margin: auto;
+     font-size: 2em;
+     line-height: 1em;
    }
 
-   #title-card .tc-content h1:after {
+   #skills h1 span {
+     font-style: italic;
+   }
+
+   #skills h1 span:after {
      content: "";
      display: block;
      width: 90%;
-     margin-top: -.5em;
+     margin-top: -.4em;
      margin-left: auto;
      margin-right: auto;
-     border-bottom: 26px solid #eee;
+     border-bottom: 26px solid #eed5d0;
    }
 
-   #title-card .tc-content img {
-     padding: 5% 0 2% 0;
-   }
-
-   #title-card .tc-content h2 {
-     font-size: 1.5em;
-     font-weight: 200;
-     text-transform: uppercase;
-     letter-spacing: .02em;
-     line-height: 1.2em;
+   #skills .skill-list {
+     width: 90%;
+     height: 425px;
      margin: auto;
-     padding-top: 3%;
+     background-color: #70806e;
+     border-top: solid 10px #333;
    }
 
-   .tc-content-cta {
-     clear: both;
-     background-color: #f6f6f6;
-     width: 75%;
-     height: auto;
-     text-align: center;
-     padding: 1%;
-     margin-top: -10%;
-     margin-left: auto;
-     margin-right: auto;
-     border: 1px solid #333;
-   }
-
-   .tc-content-cta h3 {
+   #skills h2 {
      font-family: 'Playfair Display', serif;
-     font-size: 2em;
-     font-weight: 400;
-     color: #333;
-     line-height: 1em;
+     font-size: 6em;
+     color: #fff;
+     font-style: italic;
+     letter-spacing: 0em;
+     line-height: 0em;
+     text-shadow: 3px 3px 0px rgba(51, 51, 51, 1);
    }
 
-   .tc-content-cta h4 {
+   #skills h3 {
+     font-family: 'Playfair Display', serif;
+     font-weight: 400;
      font-size: 1.5em;
-     font-weight: 300;
-     color: #333;
-     line-height: 1em;
-   }
-
-   .tc-content-cta h4:after {
-       content: "";
-       display: block;
-       margin: 0 auto;
-       width: 20%;
-       padding-top: 10%;
-       border-bottom: 5px solid #333;
-   }
-
-   .tc-content-cta h5 {
-     font-family: 'Playfair Display', serif;
-     font-size: 1.25em;
-     font-weight: 400;
      font-style: italic;
-     color: #333;
-     line-height: .5em;
+     color: #fff;
    }
 
-   .tc-content-cta h5 a {
-     color: #333;
-     text-decoration: none;
-     border-bottom: 1px solid #333;
-   }
-
-   .tc-content-cta img {
-     margin-bottom: -10%;
-   }
-
-   /***** ABOUT *****/
-   #about {
-     background: #fff;
-     height: auto;
-     font-size: 1em;
-     color: #333;
-   }
-
-   #about .about-container {
-     width: 93%;
-     max-width: 1200px;
-     font-size: 1em;
-     margin: 0 auto;
-     padding: 2em 0 6em 0;
-     clear: both;
-   }
-
-   #about .about-half {
-     width: 100%;
-   }
-
-   #about h3 {
-     font-family: 'Playfair Display', serif;
-     font-size: 3em;
-     line-height: 1em;
+   #skills p {
      font-weight: 300;
-     font-style: italic;
-   }
-
-   #about .about-p {
-     font-size: 1em;
-     margin-top: -2.5em;
-   }
-
-   #about p {
      font-size: 1.1em;
      line-height: 1.8em;
-     font-weight: 300;
-     width: 100%;
+     color: #fff;
+     padding: 0 1.59em 2em 1.59em;
    }
 
-   #about .line-top {
-     float: right;
-     width: 50%;
-     padding: 3% 0 3% 0;
-     border-top: 10px solid #eed5d0;
-   }
-
-   #about .about-img {
-     text-align: center;
-   }
-
-   #about .about-img img {
-     max-width: 100%;
-   }
-
-   #about .line-bottom {
-     clear: both;
-     width: 50%;
-     padding: 3% 0 3% 0;
-     border-bottom: 10px solid #70806e;
-   }
-
-   /***** SERVICES *****/
-   #services {
+   /***** SKILLS2 *****/
+   #skills2 {
      background: #f6f6f6;
      height: auto;
      text-align: center;
      font-size: 1em;
    }
 
-   #services .services-container {
+   #skills2 .skills2-container {
      width: 98%;
      margin: 0 auto;
      padding: 4em 0 6em 0;
    }
 
-   #services .services-title {
+   #skills2 .skills2-title {
      width: 95%;
      max-width: 780px;
      margin-left: auto;
      margin-right: auto;
      text-align: center;
+     padding-bottom: 2em;
    }
 
-   #services h1 {
+   #skills2 h1 {
      font-family: 'Playfair Display', serif;
      font-weight: 400;
      font-size: 2em;
+     font-style: italic;
      line-height: 1em;
    }
 
-   #services h1 span {
-     font-style: italic;
-   }
-
-   #services h1 span:after {
+   #skills2 h1:after {
      content: "";
      display: block;
-     width: 80%;
+     width: 75%;
      margin-top: -.4em;
      margin-left: auto;
      margin-right: auto;
      border-bottom: 26px solid #eed5d0;
    }
 
-   #services .services-prices {
+   #skills2 .skills2-list-row {
      clear: both;
-     text-align: center;
-     width: 70%;
+     width: 95%;
      margin: auto;
-     padding-bottom: 2%;
    }
 
-   #services h3 {
+   #skills2 .skills2-list-item {
+     padding: .5% 0 .5% 0;
+     border-top: 1px solid #bbb;
+   }
+
+   #skills2 .skills2-list-item h4 {
+     font-size: 1em;
+     font-weight: 300;
+     letter-spacing: .02em;
+     text-transform: uppercase;
+   }
+
+   /***** MAIN CONTENT *****/
+   .intro-container {
+     width: 95%;
+     max-width: 780px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     padding: 5% 0 5% 0;
+   }
+
+   .intro-container h1 {
      font-family: 'Playfair Display', serif;
      font-weight: 400;
-     font-size: 1.3em;
+     font-size: 2em;
      font-style: italic;
-     color: #333;
-     line-height: 1.5em;
+     line-height: 1em;
    }
 
-   #services .services-list-full {
-     clear: both;
-     width: 100%;
-     height: auto;
-     margin-bottom: 5%;
-   }
-
-   #services .services-list {
-     width: 90%;
-     height: auto;
-     margin: auto;
-     background-color: #fff;
-     border-top: solid 5px #333;
-     padding-bottom: 1em;
-   }
-
-   #services h2 {
-     font-family: 'Playfair Display', serif;
-     font-size: 5em;
-     color: #70806e;
-     font-style: italic;
-     letter-spacing: 0em;
-     line-height: 0em;
-   }
-
-   #services h4 {
-     font-size: 1.5em;
-     font-weight: 300;
-     color: #333;
-     text-transform: uppercase;
-     letter-spacing: .03em;
-     line-height: 0em;
-   }
-
-   #services .services-list h4:after {
+   .intro-container h1:after {
      content: "";
      display: block;
-     margin: 0 auto;
-     width: 10%;
-     padding: 8% 0 1% 0;
+     width: 75%;
+     margin-top: -.4em;
+     margin-left: auto;
+     margin-right: auto;
+     border-bottom: 26px solid #eed5d0;
+   }
+
+   .skillcrush-link {
+     clear: both;
+     margin: auto;
+     text-align: center;
+     padding-bottom: 3%;
+   }
+
+   .skillcrush-link a {
+     font-size: 1em;
+     text-transform: uppercase;
+     letter-spacing: .15em;
+     text-decoration: none;
+     color: #333;
+     border-bottom: 5px solid #333;
+   }
+
+   .skillcrush-link a:hover {
+     border-bottom: 5px solid #eed5d0;
+   }
+
+   .return {
+     clear: both;
+     text-align: center;
+     padding: 5% 0 8% 0;
+   }
+
+   .return a {
+     font-family: 'Playfair Display', serif;
+     font-size: 1.5em;
+     text-decoration: none;
+     color: #333;
+     font-style: italic;
+   }
+
+   .return a:hover {
      border-bottom: 2px solid #333;
    }
 
-   #services .services-list p {
-     font-weight: 300;
-     font-size: 1.1em;
-     line-height: 1.8em;
-     color: #333;
-     text-align: left;
-     padding: 0 1.59em 2em 1.59em;
-   }
-
-   #services .services-additional {
-     clear: both;
-     text-align: center;
-     width: 70%;
-     margin: auto;
-     padding: 2% 1% 2% 1%;
-     border-top: 1px solid #ccc;
-     border-bottom: 1px solid #ccc;
-   }
-
-   #services .services-additional p {
-     font-family: 'Playfair Display', serif;
-     font-weight: 400;
-     font-size: 1em;
-   }
-
-   #services .services-additional a {
-     color: #333;
-     text-decoration: none;
-     border-bottom: 1px solid #333;
-   }
-
-   #services .services-payment {
-     clear: both;
-     text-align: center;
-     width: 70%;
-     margin: auto;
-     padding-top: 5%;
-   }
-
-   #services .services-payment h5 {
-     font-family: 'Playfair Display', serif;
-     font-weight: 400;
-     font-size: .9em;
-     font-style: italic;
-     color: #333;
-     line-height: 1.5em;
+   .return a:after {
+     content: "";
+     display: block;
+     width: 55%;
+     margin-top: -.5em;
+     margin-left: auto;
+     margin-right: auto;
+     border-bottom: 15px solid #eee;
    }
 
    /***** PORTFOLIO *****/
-   #portfolio {
+   #portfolio-landing {
      background: #fff;
      height: auto;
      font-size: 1em;
    }
 
-   #portfolio .portfolio-container {
+   #portfolio-landing .portfolio-container {
      width: 100%;
      max-width: 1200px;
      margin: 0 auto;
-     padding: 4em 0 6em 0;
+     padding: 3% 0 3% 0;
    }
 
-   #portfolio .portfolio-intro {
-     width: 95%;
-     max-width: 780px;
-     margin-left: auto;
-     margin-right: auto;
-     text-align: center;
-     padding-bottom: 1em;
-   }
-
-   #portfolio .portfolio-intro h2 {
-     font-family: 'Playfair Display', serif;
-     font-weight: 400;
-     font-size: 2em;
-     line-height: 1em;
-   }
-
-   #portfolio h2 span {
-     font-style: italic;
-   }
-
-   #portfolio h2 span:after {
-     content: "";
-     display: block;
-     width: 80%;
-     margin-top: -.4em;
-     margin-left: auto;
-     margin-right: auto;
-     border-bottom: 26px solid #eed5d0;
-   }
-
-   #portfolio .portfolio-full {
+   #portfolio-landing .portfolio-full {
      width: 100%;
      margin: auto;
    }
 
-   #portfolio .portfolio-half {
+   #portfolio-landing .portfolio-half {
      width: 98%;
      padding-bottom: 3em;
      text-align: center;
    }
 
-   #portfolio .portfolio-half img {
+   #portfolio-landing .portfolio-half img {
      border: solid 1px #333;
      -webkit-box-shadow: 15px 15px 0px 0px rgba(112,128,110,1);
      -moz-box-shadow: 15px 15px 0px 0px rgba(112,128,110,1);
@@ -577,7 +448,7 @@ textarea {
      margin-bottom: 1.5em;
    }
 
-   #portfolio .portfolio-half h4 a {
+   #portfolio-landing .portfolio-half h4 a {
      font-family: 'Playfair Display', serif;
      font-weight: 400;
      font-size: 1.5em;
@@ -586,11 +457,11 @@ textarea {
      text-decoration: none;
    }
 
-   #portfolio .portfolio-half h4 a:hover {
+   #portfolio-landing .portfolio-half h4 a:hover {
      border-bottom: 2px solid #eed5d0;
    }
 
-   #portfolio .read-more-link a {
+   #portfolio-landing .read-more-link a {
      font-size: 1em;
      text-transform: uppercase;
      letter-spacing: .15em;
@@ -598,167 +469,66 @@ textarea {
      color: #333;
    }
 
-   #portfolio .read-more-link a:hover {
+   #portfolio-landing .read-more-link a:hover {
      background-color: #eed5d0;
    }
 
-   #portfolio .portfolio-link {
-     clear: both;
-     margin: auto;
-     text-align: center;
-   }
-
-   #portfolio .portfolio-link h3 {
-     font-family: 'Playfair Display', serif;
-     font-size: 1em;
-     font-weight: 400;
-     font-style: italic;
-   }
-
-   #portfolio .portfolio-link a {
-     text-decoration: none;
-     color: #333;
-     border-bottom: 1px solid #333;
-   }
-
-   #portfolio .portfolio-link a:hover {
-     border-bottom: 1px solid #eed5d0;
-   }
-
-   /***** CONTACT *****/
-   #contact {
-     background: #333;
+   /***** CLIENT PAGES *****/
+   #client-work {
+     background: #fff;
      height: auto;
      font-size: 1em;
+     color: #333;
    }
 
-   #contact .contact-container {
-     width: 100%;
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 2em 0 3em 0;
-   }
-
-   #contact .contact-half {
-     width: 98%;
-     text-align: center;
-     margin-left: auto;
-     margin-right: auto;
-   }
-
-   #contact .contact-half h3 {
-     font-family: 'Playfair Display', serif;
-     font-weight: 400;
-     font-style: italic;
-     font-size: 2.25em;
-     line-height: 1em;
-     color: #eed5d0;
-   }
-
-   #contact .contact-half p {
-     font-weight: 300;
-     font-size: 1.1em;
-     line-height: 1.8em;
-     color: #eed5d0;
-     padding: 0 1.4em 0 1.4em;
-   }
-
-   #contact .contact-half h4 a {
-     font-family: 'Playfair Display', serif;
-     font-weight: 400;
-     font-size: 1.25em;
-     font-style: italic;
-     color: #eed5d0;
-     text-decoration: none;
-   }
-
-   #contact .contact-half h4 a:hover {
-     border-bottom: 2px solid #eed5d0;
-   }
-
-   #contact .contact-half ul {
+   #client-work .half-width {
      margin: auto;
-     padding: 0;
-   }
-
-   #contact .contact-half ul li {
-     display: inline-block;
-     padding-right: .75em;
-   }
-
-   #contact .contact-half ul li a {
-     font-size: 1em;
-     color: #eed5d0;
-   }
-
-   #contact .contact-half ul li a:hover {
-     font-weight: bold;
-   }
-
-   #contact form {
-     margin: 0 auto;
-     width: 80%;
-     font-size: 1em;
-     padding: 2em .5em;
-   }
-
-   #contact form div + div {
-     margin-top: .5em;
-   }
-
-   #contact input, textarea {
-     background-color: inherit;
-     font-size: .8em;
-     letter-spacing: .1em;
-     font-weight: 300;
-     color: #eed5d0;
-     width: 100%;
-     padding: 1em 0 .5em 0;
-     outline: none;
-     border-top: none;
-     border-left: none;
-     border-right: none;
-     border-bottom: 1px solid #eed5d0;
-   }
-
-   #contact textarea {
-     vertical-align: top;
-     height: 6em;
-     padding-top: 1em;
-   }
-
-   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #eed5d0;
-    opacity: 1; /* Firefox */
-    font-size: 1em;
-    text-transform: uppercase;
-   }
-
-   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #eed5d0;
-   }
-
-   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #eed5d0;
-   }
-
-   #contact button {
-     width: 25%;
-     margin-left: auto;
-     margin-right: auto;
      text-align: center;
-     background-color: inherit;
-     color: #eed5d0;
-     font-size: .8em;
-     font-weight: 400;
+   }
+
+   #client-work .half-width h3 {
+     font-size: 1.25em;
+     font-weight: 300;
      text-transform: uppercase;
-     letter-spacing: .1em;
-     outline: none;
-     border-top: none;
-     border-left: none;
-     border-right: none;
-     border-bottom: 2px solid #eed5d0;
-     padding: 2em 0 1em 0;
+     letter-spacing: .02em;
+     text-align: left;
+     line-height: 1em;
+   }
+
+   #client-work .half-width h3 a {
+     text-decoration: none;
+     color: #333;
+   }
+
+   #client-work .half-width h3 a:hover {
+     border-bottom: 2px solid #70806e;
+   }
+
+   #client-work .half-width h4 {
+     font-family: 'Playfair Display', serif;
+     font-size: 1.15em;
+     font-style: italic;
+     text-align: left;
+     line-height: 1em;
+   }
+
+   #client-work .half-width p {
+     width: 100%;
+     font-size: 1.1em;
+     line-height: 1.7em;
+     font-weight: 300;
+     text-align: left;
+   }
+
+   #client-work .half-width p a {
+     text-decoration: none;
+     color: #333;
+     border-bottom: 2px solid #70806e;
+   }
+
+   #client-work .half-width img {
+     max-width: 98%;
+     border: 1px solid #ccc;
    }
 
    /***** FOOTER *****/
@@ -848,7 +618,6 @@ textarea {
      border-bottom: 2px solid #333;
    }
 
-
    /* ==========================================================================
       Helper classes
       ========================================================================== */
@@ -937,6 +706,12 @@ textarea {
 
       /*---------- TABLET ----------*/
       @media all and (min-width:768px) {
+        /***** GRID *****/
+        .full-width {
+          width: 95%;
+          max-width: 1100px;
+        }
+
         /***** HEADER *****/
         header {
           padding-bottom: 1em;
@@ -969,129 +744,113 @@ textarea {
           padding: 1em 0 1em 0;
         }
 
-        /***** TITLE CARD *****/
-        #title-card {
-          height: 400px;
-          background: url('../img/hero-bg.jpg') no-repeat top center;
-        }
-
-        #title-card .tc-content {
-          width: 40%;
-        }
-
-        #title-card .tc-content h1:after {
-          width: 85%;
-        }
-
-        .tc-content-cta {
-          margin-top: -4%;
-        }
-
-        .tc-content-cta h4:after {
-            width: 8%;
-            padding-top: 4%;
-        }
-
-        .tc-content-cta img {
-          margin-bottom: -5%;
-        }
-
-
-        /***** ABOUT *****/
-        #about .about-container {
-          width: 90%;
-        }
-
-        #about h3 {
-          font-size: 3.8em;
-        }
-
-        #about p {
-          width: 90%;
-        }
-
-        #about img {
-          max-width: 100%;
-        }
-
-        /***** SERVICES *****/
-        #services h1 {
+        /***** SKILLS *****/
+        #skills h1 {
           font-size: 3em;
         }
 
-        #services h1 span:after {
+        #skills h1 span:after {
           width: 60%;
           margin-top: -.3em;
         }
 
-        #services .services-prices {
-          width: 60%;
-        }
-
-        #services .services-container {
+        #skills .skills-container {
           width: 98%;
           max-width: 1200px;
           margin: 0 auto;
         }
 
-        #services .services-list {
-          width: 31%;
+        #skills .skill-list {
+          width: 29%;
+          height: 525px;
           float: left;
-          margin: 0 1% 0 1%;
+          margin: 0 2% 0 2%
         }
 
-        #services .services-list p {
+        #skills p {
           width: auto;
           margin-left: auto;
           margin-right: auto;
-          padding: 0 1em;
+          padding: 0 1em 2em 1em;
         }
 
-        #services .services-additional p {
-          font-size: 1.3em;
+        /***** SKILLS2 *****/
+        #skills2 .skills2-container {
+          width: 98%;
+          max-width: 1200px;
+          margin: 0 auto;
         }
 
-        #services .services-payment {
-          width: 45%;
-        }
-
-        /***** PORTFOLIO *****/
-        #portfolio .portfolio-intro h2 {
+        #skills2 h1 {
           font-size: 3em;
         }
 
-        #portfolio h2 span:after {
+        #skills2 h1:after {
           width: 60%;
           margin-top: -.3em;
         }
 
-        #portfolio .portfolio-full {
+        #skills2 .skills2-list-row {
+          clear: both;
+          width: 98%;
+          max-width: 1200px;
+        }
+
+        #skills2 .skills2-list-item {
+          float: left;
+          width: 29%;
+          margin: 0 2% 0 2%;
+        }
+
+        #skills2 .last-item {
+          border-bottom: 1px solid #bbb;
+        }
+
+        /***** MAIN CONTENT *****/
+        .intro-container h1 {
+          font-size: 3em;
+        }
+
+        .intro-container h1:after {
+          width: 60%;
+          margin-top: -.3em;
+        }
+
+        .intro-container h2 {
+          font-size: 2.5em;
+        }
+
+        .skillcrush-link a {
+          font-size: 1.25em;
+        }
+
+        .return a:after {
+          width: 30%;
+        }
+
+        /***** PORTFOLIO *****/
+        #portfolio-landing .portfolio-full {
           width: 98%;
           max-width: 1000px;
         }
 
-        #portfolio .portfolio-half {
+        #portfolio-landing .portfolio-half {
           width: 50%;
           float: left;
           padding-bottom: 6em;
         }
 
-        #portfolio .portfolio-link h3 {
-          font-size: 1.5em;
+        /***** CLIENT PAGES *****/
+        #client-work .cw-about {
+          margin-left: 15%;
         }
 
-        /***** CONTACT *****/
-        #contact .contact-container {
-          width: 95%;
+        #client-work .half-width p {
+          width: 80%;
         }
 
-        #contact .contact-half {
-          width: 50%;
-          float: left;
-        }
-
-        #contact form {
-          width: 85%;
+        #client-work .half-width img {
+          max-width: 100%;
         }
 
         /***** FOOTER *****/
@@ -1113,82 +872,62 @@ textarea {
 
       /*---------- DESKTOP ----------*/
       @media all and (min-width:940px) {
-        /***** TITLE CARD *****/
-        #title-card {
-          height: 600px;
-          background: url('../img/hero-bg.jpg') no-repeat center center;
+        /***** GRID *****/
+        .full-width {
+          width: 95%;
+          max-width: 1100px;
         }
 
-        #title-card .tc-content {
-          width: 43%;
-        }
-
-        #title-card .tc-content h1 {
-          font-size: 3em;
-          margin: auto;
-        }
-
-        #title-card .tc-content h1:after {
-          width: 75%;
-        }
-
-        #title-card .tc-content h2 {
-          font-size: 2em;
-        }
-
-        /***** ABOUT *****/
-        #about .about-container {
-          width: 90%;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 8em 0 8em 0;
-        }
-
-        #about .about-half {
+        .half-width {
           width: 50%;
           float: left;
         }
 
-        /***** SERVICES *****/
-        #services .services-container {
+        /***** SKILLS *****/
+        #skills .skills-container {
           width: 100%;
           max-width: 1200px;
           padding: 6em 0 10em 0;
         }
 
-        #services .services-title {
+        #skills .skills-title {
           width: 65%;
         }
 
-        #services .services-list {
-          height: 900px;
+        #skills .skill-list {
+          height: 425px;
         }
 
-        /***** PORTFOLIO *****/
-        #portfolio .portfolio-intro {
-          width: 65%;
-        }
-
-        #portfolio .portfolio-container {
+        /***** SKILLS2 *****/
+        #skills2 .skills2-container {
+          width: 100%;
+          max-width: 1200px;
           padding: 6em 0 10em 0;
         }
 
-        /***** CONTACT *****/
-        #contact .contact-container {
-          width: 100%;
-          max-width: 1050px;
+        #skills2 .skills2-title {
+          width: 65%;
         }
 
-        #contact form {
-          width: 75%;
+        /***** MAIN CONTENT *****/
+        .skillcrush-link a {
+          font-size: 1.4em;
         }
 
-        #contact input, textarea {
-          width: 85%;
+        .return a:after {
+          width: 20%;
         }
 
-        #contact button {
-          width: 25%;
+        /***** PORTFOLIO *****/
+
+
+        /***** CLIENT PAGES *****/
+        #client-work .cw-about {
+          margin-left: 5%;
+        }
+
+        #client-work .half-width p {
+          width: 90%;
         }
 
       }
